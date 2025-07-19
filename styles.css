@@ -1,0 +1,224 @@
+*{
+    box-sizing: border-box;
+  
+}
+body{
+       background-color: #f5f5f5;
+}
+
+
+.container{
+    max-width:70%;
+    margin:10px auto;
+}
+
+.section{
+    margin-top: 3rem;
+    padding:4rem 6rem 0rem 6rem;
+    font-family: poppins;
+    min-height:100vh;
+}
+.intro-section{
+    min-height:100vh;
+}
+
+
+.main-text h1,p{
+   margin:0;
+}
+.main-text h1{
+    font-size: 5rem;
+    font-weight: 0;
+}
+.main-text p{
+    font-size: 2.5rem;
+}
+.highlight{
+   color:#587c6a;
+}
+.subtle-red-highlight{
+    color:#d9534f;
+}
+.navlinks{
+    display:flex;
+    justify-content: center;
+    padding-block-start:3rem;
+}
+.nav-list{
+    list-style: none;
+    display:flex;
+    justify-content: left;
+    gap: 5rem;
+    a{
+        text-decoration: none;
+        color:#000000;
+    }
+    li{
+         transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+    li:hover{
+        background-color:#587c6a;
+        a{
+            color: #ffffff;
+        }
+        border: white 1px solid;
+       
+    }
+    inline-size:100%;
+}
+.nav-button{
+    border: solid #000000 1px;
+    border-radius:2rem;
+    padding:0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-content{
+    display:flex;
+    justify-content: space-between;
+    gap:2rem;
+    p{
+        font-style:normal;
+        font-weight:0;
+        font-family:'poppins';
+        font-size: 1rem;        
+    }
+}
+.card{
+    border: #000000 1px solid;
+    padding:2rem;
+    transition: transform 0.3s ease-in-out;
+}
+.card:hover{
+    transform: translateY(-2rem);
+    box-shadow: #000000 4px 6px 8px 2px;
+}
+.skills-content{
+    padding:2rem;
+    p{
+        color:#0a073d;
+        font-size: 1.5rem;
+    }
+}
+.skills-list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap:0.5rem;
+}
+.skill-item{
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    transition: background-color 0.3s ease-in-out;
+}
+.skill-item:hover{
+    /* background-color: #f0f0f0; */
+    background-color: #0a073d;
+    color: #ffffff;
+}
+img{
+    max-width:100%;
+}
+.Project-content{
+    max-inline-size: 100%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:1rem;
+}
+.project-card{
+     padding:2rem;
+     border: #587c6a 1px solid;
+     transition: background-color 0.5s ease-in-out, color 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.project-card:hover{
+        background-color: #587c6a;
+        color: #ffffff;
+        backdrop-filter: blur(10px);
+        transform: translate3d(-7px, -20px, -20px);
+        box-shadow: #0c0c0c 10px 10px 20px 0px;
+}   
+footer{
+    max-width:100%;
+    /* background-color: #0e3564; */
+    background-color: #587c6a;
+    color: #f4f4f4;
+    padding:1rem;
+    text-align: center;
+}
+#more-projects{
+    width:15%;
+    margin: 2rem auto;
+    text-align: center;
+    a{
+        text-decoration: none;
+        color:#000000;
+    }
+    border: 1px solid #000000;
+    padding:0.5rem;
+    border-radius: 5px;
+}
+#more-projects:hover{
+    background-color: #587c6a;
+    a{
+    color: #ffffff;
+    }
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+
+ @media (max-width: 900px) {
+    .section{
+        margin-top: 1.5rem;
+        padding: 2rem 3rem 0rem 3rem;  
+    }
+    .container{
+        max-width:70%;
+        margin:5px auto;
+    }   
+    .main-text h1{
+        font-size: 2rem;
+        font-weight: 0;
+    }
+    .main-text p{
+         font-size: 1.25rem;
+    }
+    .navlinks{
+        padding-block-start:1.5rem;
+    }
+    .nav-list{
+            gap: 2rem;
+        }
+    .nav-button{
+         border-radius:1rem;
+    }
+    .about-content{
+        flex-direction: column;
+        gap:1rem;
+        p{
+            font-size: 0.75rem;        
+        }
+    }
+    .card{
+        padding:1rem;
+    }
+    .skills-content{
+    padding:1rem;
+        p{
+            font-size: 1rem;
+        }
+    }
+    .Project-content{
+        grid-template-columns: 1fr;
+        gap:0.75rem;
+    }
+    .project-card{
+     padding:1rem;
+    }
+
+ }

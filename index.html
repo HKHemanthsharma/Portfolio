@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>My PortFolio</title>
+</head>
+ <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+</style>
+<body>
+    <div class="container">
+        <section class="section intro-section">
+            <div class="main-text">
+                <h1>Hi, I am</h1>
+                <h1 class="highlight">Hemanth</h1>
+                <p>junior <span class="subtle-red-highlight">.NET</span> Developer and a Tech Enthusiast</p>
+            </div>
+            <nav class="navlinks">
+                <ul class="nav-list">
+                    <li class="nav-button"><a href="#about">About Me</a></li>
+                    <li class="nav-button"><a href="#skills">Skills</a></li>
+                    <li class="nav-button"><a href="#projects">Projects</a></li>
+                    <li class="nav-button"><a href="./assets/Hemanth_Latest_2025.pdf" download="hemanth_resume.pdf">Resume</a></li>
+                   <!-- <li class="nav-button"><a href="#experience">Professional Experience</a></li> -->
+                </ul>
+            </nav>
+        </Section>
+        <section id="about" class="section about-section">
+            <div class="about-content">
+                <div class="Education card">
+                    <h2 class="highlight">Education and Interests</h2>
+                    <p>I hold a Bachelor of Technology degree in Electronics and Communication Engineering</p>
+                    <p>But I am more passionate and interested in software developement</p>
+                    <p>though I have found Backend development to be quite interesting, I am very curious generally about various technologies.</p>
+                </div>
+                <div class="career-and-goals card">
+                    <h2 class="subtle-red-highlight">Career and Goals</h2>
+                    <p>I am a Junior Software developer</p>
+                    <p>Currently my goal is to improve my .NET core backend Knowledge and to expand my skillset to FrontEnd developement as well</p>
+                    <p>I am currently exploring HTML and CSS and soon I will be going to learn Angular so that I can develop full scale front and backend applications</p>
+                    <p> Apart from coding i also like to play cricket and to ride bikes</p>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="section skills-section">
+            <h2 class="highlight">Skills</h2>
+            <div class="skills-content">
+                <p>Programming Languages:</p>
+                <ul class="skills-list">
+                    <li class="skill-item">C#</li>
+                    <li class="skill-item">HTML</li>
+                    <li class="skill-item">CSS</li>
+                    <li class="skill-item">JavaScript</li>
+                    <li class="skill-item">SQL</li>   
+                </ul> 
+            </div>
+            <div class="skills-content">              
+                <p>.NET Specific Skills:</p>
+                <ul class="skills-list">
+                    <li class="skill-item">.NET Core</li> 
+                    <li class="skill-item">Entity Framework</li>
+                    <li class="skill-item">WEBAPI</li>
+                    <li class="skill-item">Dapper</li> 
+                    <li class="skill-item">ADO.NET</li>                      
+                </ul>
+            </div>
+            <div class="skills-content">
+                <p>Tools:</p>
+                <ul class="skills-list">
+                    <li class="skill-item">Git</li> 
+                    <li class="skill-item">Visual Studio</li>
+                    <li class="skill-item">Postman</li>
+                    <li class="skill-item">Swagger</li>    
+                    <li class="skill-item">Fiddler</li>                   
+                </ul>
+            </div>       
+        </section>
+        <section id="projects" class="section projects-section">
+            <h2 class="highlight">Projects:</h2>
+            <div class="Project-content">
+                <div class="project-card">
+                    <h3>Coding Tracker</h3>
+                    <div class="description">
+                        <p>Coding Tracker is a console based application that helps the user to log their coding time and track their progress over time.</p>
+                        <p>The application helps the users to track and review their progress effectively.</p>
+                        <p>the application has the feature to calculate the weekly and monthly coding logs and generate reports.</p>
+                        <p> the reports are generated and displayed to the user in tabular form in console using spectre console library.</p>
+                    </div>
+                    <div class="technologies">
+                        <h3>technologies used:</h3>
+                        <ul class="technologies-list">
+                            <li class="technology-item">C#</li>
+                            <li class="technology-item">ADO.NET</li>
+                            <li class="technology-item">spectre-console</li>
+                            <li class="technology-item">SQL</li>
+                        </ul>
+                    </div>
+                    <div class="demo">
+                        <h3>Demo:</h3>
+                        <img src="./ProjectDemogifs/CodingTracker.gif" alt="Coding Tracker Demo">
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Drinks Project</h3>
+                    <div class="description">
+                            <p>The Drinks Project is a console based application, that consumes a thirdparty REST API using HttpClient in .Net Core,
+                        and displays the fetched Json data to the console with visually stunning UI using spectre-console library.
+                        the application allows the user to fetch the drinks by category, by name and by alcoholic/non-alcoholic type.
+                        and also allows the user to search for a drink by name and can see the details of the drink.</p>
+                    </div>
+                    <div class="technologies">
+                        <h3>technologies used:</h3>
+                        <ul class="technologies-list">
+                            <li class="technology-item">C#</li>
+                            <li class="technology-item">HttpClient</li>
+                            <li class="technology-item">spectre-console</li>
+                            <li class="technology-item">JsonSerializer</li>
+                        </ul>
+                    </div>
+                    <div class="demo">
+                        <h3>Demo:</h3>
+                        <img src="./ProjectDemogifs/Drinks.gif" alt="Drinks Project Demo">
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Exercise Tracker</h3>
+                    <div class="description">
+                            <p> Exercise Tracker is a console based application that allows the user to track their daily exercise activities.
+                        The application allows the user to log their exercises, view their exercise history, and get insights into their fitness journey.
+                        It provides a simple and intuitive interface for users to manage their exercise routines effectively.
+                        The project is using .NET Core WEBAPI for the backend and the console as a frontend interface using Spectre.Console library.
+                        The application allows the user to perform CRUD operations on exercises, view exercise history, and also provides CRUD operations on shifts on each exercise.</p>
+                    </div>
+                    <div class="technologies">
+                        <h3>technologies used:</h3>
+                        <ul class="technologies-list">
+                            <li class="technology-item">C#</li>
+                            <li class="technology-item">WEBAPI</li>
+                            <li class="technology-item">spectre-console</li>
+                            <li class="technology-item">JsonSerializer</li>
+                            <li class="technology-item">Entity Framework</li>
+                            <li class="technology-item">SQL</li>
+                            <li class="technology-item">Repository Pattern</li>
+                        </ul>
+                    </div>
+                    <div class="demo">
+                        <h3>Demo:</h3>
+                        <img src="./ProjectDemogifs/ExerciseShift.gif" alt="Exercise Tracker Demo">
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>DotNet Quizzer</h3>
+                    <div class="description">
+                            <p>
+                                 The DotNet Quizzer is a console based quiz application that allows users to test their knowledge on .NET technologies.
+                         The Application allows users to Create TechStack and add questions and answers to the TechStack.
+                         Users can then take quizzes based on the created TechStacks, and the application saves each study session of the user.
+                         The application provides a simple and intuitive interface for users to manage their quizzes effectively.
+                         The users can see various reports on their quiz performance and can also view the questions and answers of each quiz.
+                         the users can see their scores on monthly and yearly averages which allows the user to track their progress over time.
+                             </p>
+                        
+                    </div>
+                    <div class="technologies">
+                        <h3>technologies used:</h3>
+                        <ul class="technologies-list">
+                            <li class="technology-item">C#</li>
+                            <li class="technology-item">spectre-console</li>
+                            <li class="technology-item">ADO.NET</li>
+                            <li class="technology-item">SQL</li>
+                        </ul>
+                    </div>
+                    <div class="demo">
+                        <h3>Demo:</h3>
+                        <img src="./ProjectDemogifs/Flashcards.gif" alt="Flashcards Demo">
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>PhoneBook</h3>
+                    <div class="description">
+                            <p>
+                                 The PhoneBook application is a console-based tool that allows users to manage their contacts efficiently.
+                        Users can add, update, delete and view contacts.
+                        The application provides a simple and intuitive interface for users to interact with their contact list.
+                        The application allows the user to send emails to the contacts.
+                        The application uses smtp client to send emails to the contacts. and the user WEBAPI to perform CRUD operations on contacts at backend
+                         and uses Entity Framework Core to interact with the database.
+                             </p>
+                        
+                    </div>
+                    <div class="technologies">
+                        <h3>technologies used:</h3>
+                        <ul class="technologies-list">
+                            <li class="technology-item">C#</li>
+                            <li class="technology-item">spectre-console</li>
+                            <li class="technology-item">SMTP Client</li>
+                            <li class="technology-item">SQL</li>
+                            <li class="technology-item">Entity Framework</li>
+                        </ul>
+                    </div>
+                    <div class="demo">
+                        <h3>Demo:</h3>
+                        <img src="./ProjectDemogifs/Phonebook.gif" alt="PhoneBook Demo">
+                    </div>
+                </div>
+                 <div class="project-card">
+                    <h3>ShiftsLogger</h3>
+                    <div class="description">
+                            <p>
+                                  ShiftsLogger is a console based application that allows the user to log their daily work shifts.
+                        The application allows the user to log their shifts, view their shift history, and get insights into their work hours.
+                        It provides a simple and intuitive interface for users to manage their work shifts effectively.
+                        The project is using .NET Core WEBAPI for the backend and the console as a frontend interface using Spectre.Console library.
+                        The application allows the user to perform CRUD operations on shifts, view shift history, and also provides CRUD operations on employees as well.
+                        the application uses Entity Framework Core to interact with the database and uses Repository pattern to manage the data access layer.
+                             </p>
+                        
+                    </div>
+                    <div class="technologies">
+                        <h3>technologies used:</h3>
+                        <ul class="technologies-list">
+                            <li class="technology-item">C#</li>
+                            <li class="technology-item">spectre-console</li>
+                            <li class="technology-item">Repository Pattern</li>
+                            <li class="technology-item">SQL</li>
+                            <li class="technology-item">EF Core</li>
+                            <li class="technology-item">WEBAPI</li>
+                        </ul>
+                    </div>
+                    <div class="demo">
+                        <h3>Demo:</h3>
+                        <img src="./ProjectDemogifs/ShiftsLogger.gif" alt="ShiftsLogger Demo">
+                    </div>
+                </div>
+            </div>
+            <div id="more-projects"><a href="https://github.com/HKHemanthsharma">More Projects</a></div>
+    </section>
+   </div>
+   <footer>
+    <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+   </footer>
+</body>
+</html>
