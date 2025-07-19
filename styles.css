@@ -243,6 +243,17 @@ footer{
     }
 
  }
+ @media (max-width: 480px) {
+    .section {
+        padding: 1rem 0.5rem 0 0.5rem; /* Even tighter padding */
+    }
+    .nav-list {
+        gap: 1rem; /* Compact navigation */
+    }
+    #more-projects {
+        width: 70%; /* More reasonable button size */
+    }
+}
  /* * {
   background: #000 !important;
   color: #0f0 !important;
