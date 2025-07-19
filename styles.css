@@ -236,6 +236,11 @@ footer{
     .project-card{
      padding:1rem;
     }
+    #more-projects{
+        width: 50%;
+        margin: 1rem auto;
+        padding: 0.25rem;
+    }
 
  }
  /* * {
