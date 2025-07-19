@@ -186,7 +186,8 @@ footer{
  @media (max-width: 900px) {
     .container{
         max-width: 100%; /* Full width on mobile */
-        padding: 0 1rem; /* Small padding instead of margin */
+        padding: 0 0; /* Small padding instead of margin */
+        margin:0px;
     }
     .section{
         margin-top: 1.5rem;
